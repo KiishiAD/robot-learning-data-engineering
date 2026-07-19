@@ -6,7 +6,6 @@ From one ALOHA episode to reliable, fleet-scale training data.
 
 Become capable of turning heterogeneous robot sensor streams into synchronized, validated, versioned and efficiently served datasets for policies and world models.
 
-The objective is not to reproduce billions of robot-hours in a portfolio. It is to build components whose correctness survives growth: immutable raw logs, explicit schemas, idempotent processing, lineage, quality gates and reproducible sampling.
 
 ## Principles
 
