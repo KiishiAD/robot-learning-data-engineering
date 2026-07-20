@@ -14,6 +14,8 @@
 - [ACT documentation](https://huggingface.co/docs/lerobot/act): policy overview and current LeRobot training and evaluation entry points.
 - [gym-aloha](https://github.com/huggingface/gym-aloha): the matching ALOHA simulation environment. Pin a compatible revision with the LeRobot version used for evaluation.
 
+Compatibility warning: the checkpoint card records LeRobot commit `3c0a209` and an older evaluation interface, while the current ACT documentation uses a different entry point. This repository has not yet tested and pinned a complete Module 0B environment. Treat setup as unresolved until the version matrix in the module guide is replaced with executed commands and verified revisions.
+
 ## Optional context
 
 - [Learning fine-grained bimanual manipulation with low-cost hardware](https://arxiv.org/abs/2304.13705): the ACT and ALOHA paper.

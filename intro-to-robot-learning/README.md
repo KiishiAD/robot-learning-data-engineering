@@ -17,7 +17,7 @@ This directory currently covers 0A. Evaluation, training and controlled data cha
 
 - loads a sample from `lerobot/aloha_sim_transfer_cube_human`;
 - requests a small temporal window;
-- displays the camera observations;
+- displays one current top-camera observation;
 - prints the available fields and 14-dimensional robot state.
 
 It does not yet plot a complete episode or inspect the action, timestamp, episode index and frame index together. Those are remaining learning tasks for 0A. The notebook itself is intentionally unchanged by this documentation update.
@@ -31,6 +31,23 @@ It does not yet plot a complete episode or inspect the action, timestamp, episod
 - Locate a sample within its episode using timestamp and frame metadata.
 - Identify units, coordinate conventions, calibration and collection details that would be required to reproduce the data on another robot.
 - Record the dataset revision, software environment and stated data licence rather than relying on a moving default branch or public visibility.
+
+## Published environment status
+
+The repository does not yet contain a verified environment for Module 0B. The existing notebook has outputs, but it does not pin enough of its environment to reproduce them independently.
+
+The [checkpoint model card](https://huggingface.co/lerobot/act_aloha_sim_transfer_cube_human) says the model was trained with LeRobot commit [`3c0a209`](https://github.com/huggingface/lerobot/tree/3c0a209f9fac4d2a57617e686a7f2a2309144ba2) and refers to an older `eval.py` interface. Current ACT documentation uses a different evaluation entry point. These sources are useful history, not a tested combination for this repository.
+
+| Component | Verified version or revision | Status |
+| --- | --- | --- |
+| Python | Not recorded | Unresolved |
+| LeRobot | Not recorded | Unresolved |
+| `gym-aloha` | Not recorded | Unresolved |
+| ALOHA dataset snapshot | Not pinned | Unresolved |
+| ACT checkpoint snapshot | Not pinned | Unresolved |
+| PyTorch, CUDA and GPU requirements | Not recorded | Unresolved |
+
+The first setup task for Module 0B is to run one compatible combination, record the exact commands and replace this table with tested pins. Until then, the repository should not present an evaluation command as known-good.
 
 ## Run the milestone
 

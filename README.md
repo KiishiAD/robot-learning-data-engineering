@@ -4,9 +4,15 @@ Robot-learning material is often written for robotics researchers. This reposito
 
 The focus is the data beneath robot policies and world models: collection, synchronization, validation, conversion, storage, lineage, cost and training access.
 
-The repository began as a personal learning record. The explanations, templates and completion tests are written so that other learners and practitioners can reproduce the work, adapt it to their environment and see where a result has limitations.
+The repository began as a personal learning record. The explanations, templates and completion tests are written so that other learners and practitioners can follow the work, reproduce it in their own environment and see where a result has limitations.
 
 This is not a comprehensive robotics course. It teaches robotics and machine-learning concepts when they become necessary to build or judge a data system.
+
+## Repository licence
+
+No repository-wide licence has been selected yet. Do not assume that public visibility grants permission to copy, modify or redistribute this repository. Third-party datasets, code, model checkpoints, papers and media retain their own terms.
+
+A repository licence should be chosen before inviting contributions or reuse. This limitation is recorded explicitly rather than assigning legal terms without the owner's decision.
 
 ## Start here
 

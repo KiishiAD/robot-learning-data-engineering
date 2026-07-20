@@ -99,7 +99,7 @@ Track the costs that could change a technical decision:
 - training and evaluation compute;
 - repeated work caused by rejected or corrupted episodes.
 
-Useful measures include cost per recorded hour, cost per accepted hour, storage per episode, conversion time per hour of data and time from capture to training availability. Early modules can use rough local estimates. Later modules should use measured resource consumption and stated prices.
+Useful measures include cost per recorded hour, cost per accepted hour, storage per episode, conversion time per hour of data and time from capture to training availability. Early modules can use rough local estimates. Later modules should use measured resource consumption and stated prices. Record the currency, pricing date, provider, service or hardware tier, region and price source. For human effort, explain the rate basis instead of presenting an unexplained labour cost.
 
 ### Reproducibility and change management
 
@@ -218,7 +218,7 @@ Use formats by responsibility:
 | --- | --- |
 | MCAP / rosbag2 | Raw capture and replay |
 | LeRobot | Primary PyTorch-oriented training format in this repository |
-| RLDS / TFDS | Compatibility with Open X-Embodiment and TensorFlow pipelines when required |
+| RLDS / TFDS | Legacy compatibility with Open X-Embodiment and TensorFlow pipelines when required; the upstream RLDS repository is archived and read-only |
 | HDF5 / robomimic | Compatibility with existing imitation-learning pipelines when required |
 
 Build one source-to-target converter first. Add another target only when an exercise or consumer requires it.
@@ -269,7 +269,7 @@ Required properties:
 - bounded retries and visible dead-letter or quarantine state;
 - resource and cost measurements.
 
-Completion evidence: terminate workers during a backfill, restart them and show that the final snapshot is complete, deduplicated and identical to a clean run. Report throughput, retries and cost.
+Completion evidence: terminate workers during a backfill, restart them and show that the final snapshot has the same canonical episode IDs, counts, logical content hashes and published manifest as a clean run. Logs and operational timestamps may differ. Report throughput, retries and cost.
 
 ## Module 6: multi-source collection
 
@@ -357,7 +357,7 @@ A defensible final claim is: "I built and tested the path that turns raw robot a
 - [ROS 2 tutorials](https://docs.ros.org/en/rolling/Tutorials.html)
 - [ROS 2 security](https://docs.ros.org/en/rolling/Concepts/Intermediate/About-Security.html)
 - [MCAP with ROS 2](https://mcap.dev/guides/getting-started/ros-2)
-- [RLDS](https://github.com/google-research/rlds)
+- [RLDS](https://github.com/google-research/rlds), archived and read-only since 29 November 2025
 - [DROID](https://droid-dataset.github.io/)
 - [Open X-Embodiment](https://robotics-transformer-x.github.io/)
 - [Modern Robotics](https://modernrobotics.northwestern.edu/)

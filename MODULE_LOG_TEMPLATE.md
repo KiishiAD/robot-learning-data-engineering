@@ -116,6 +116,14 @@ Add or remove rows according to the module. Do not turn a smoke test into a perf
 
 Record the costs that could affect a design decision.
 
+- Currency:
+- Pricing date:
+- Provider or vendor:
+- Service, hardware or labour tier:
+- Region:
+- Price source:
+- Labour-rate basis:
+
 | Cost or resource | Quantity | Price or basis | Estimated cost |
 | --- | ---: | ---: | ---: |
 | Human collection or review time | | | |
