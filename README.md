@@ -17,14 +17,14 @@ This is a structured record of my learning, not a comprehensive robotics course.
 | Module | Focus | Status |
 | --- | --- | --- |
 | 0 | Inspect, train and evaluate on ALOHA | In progress |
-| 1 | Robot-data semantics | Planned |
-| 2 | ROS 2 and MCAP capture | Planned |
+| 1 | Robot-data semantics and compatibility| Planned |
+| 2 | Raw capture with ROS 2 and MCAP| Planned |
 | 3 | Dataset formats and conversion | Planned |
 | 4 | Robotics data quality | Planned |
-| 5 | Distributed processing | Planned |
-| 6 | Fleet collection | Planned |
-| 7 | Training-data serving | Planned |
-| 8 | CS285 and world-model preparation | Planned |
+| 5 | Reliable and resumable processing | Planned |
+| 6 | Multi source collection | Planned |
+| 7 | Versioned training-data serving | Planned |
+| 8 | Data-to-learning experiments | Planned |
 | 9 | End-to-end capstone | Planned |
 
 ## Repository structure
